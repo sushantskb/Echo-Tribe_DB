@@ -2,7 +2,9 @@ import { Model } from "mongoose";
 import { IUser } from "./models/user.model";
 import { IOtp } from "./models/otp.model";
 import { IEvent } from "./models/event.model";
+import { IBooking } from "./models/booking.model";
 export function connectDB(): Promise<void>;
 export const User: Model<IUser>;
 export const Otp: Model<IOtp>;
-export const Event: Model<IEvent>
+export const Event: Model<IEvent>;
+export const Booking: Model<IBooking>;
