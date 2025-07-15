@@ -30,6 +30,10 @@ const userSchema = new mongoose.Schema(
     phoneNo: {
       type: String,
     },
+    gender: {
+      type: String,
+      enum: ["male", "female", "others"]
+    }
   },
   {
     timestamps: true,
