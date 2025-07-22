@@ -20,6 +20,10 @@ const bookingSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  time: {
+    type: String,
+    required: true,
+  },
   persons: [
     {
       age: {
@@ -31,4 +35,4 @@ const bookingSchema = new mongoose.Schema({
 
 const Booking = mongoose.model("Booking", bookingSchema);
 
-export default Booking; 
+export default Booking;
