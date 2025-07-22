@@ -26,8 +26,9 @@ const bookingSchema = new mongoose.Schema({
   },
   persons: [
     {
-      age: {
-        type: Number,
+      type: {
+        type: String,
+        count: Number,
       },
     },
   ],
