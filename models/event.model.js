@@ -50,6 +50,7 @@ const eventSchema = new mongoose.Schema(
       {
         type: String,
         price: Number,
+        seats: Number,
       },
     ],
     organizer: {
