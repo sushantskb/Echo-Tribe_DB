@@ -48,9 +48,18 @@ const eventSchema = new mongoose.Schema(
     },
     price: [
       {
-        type: String,
-        price: Number,
-        seats: Number,
+        type: {
+          type: String,
+          required: true,
+        },
+        price: {
+          type: Number,
+          required: true,
+        },
+        seats: {
+          type: Number,
+          required: true,
+        },
       },
     ],
     organizer: {
