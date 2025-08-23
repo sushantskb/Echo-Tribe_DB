@@ -5,7 +5,7 @@ const connectDB = async () => {
   console.log("URI", mongoURI);
   try {
     await mongoose.connect(mongoURI, {
-      dbName: "development",
+      dbName: "production",
     });
 
     console.log("MongoDB connected");
