@@ -6,6 +6,7 @@ import Otp from "./models/otp.model.js";
 import Event from "./models/event.model.js";
 import Booking  from "./models/booking.model.js";
 import Contact from "./models/contact.model.js";
+import Snapshot from "./models/snapshots.model.js";
 connectDB();
 
-export { connectDB, User, Otp, Event, Booking, Contact };
+export { connectDB, User, Otp, Event, Booking, Contact, Snapshot };
