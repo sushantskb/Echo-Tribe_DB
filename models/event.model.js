@@ -20,45 +20,35 @@ const eventSchema = new mongoose.Schema(
     },
     eventType: {
       type: String,
-      required: true,
     },
     ageGroup: {
       type: String,
-      required: true,
     },
     fromDate: {
       type: Date,
-      required: true,
     },
     toDate: {
       type: Date,
-      required: true,
     },
     fromTime: {
       type: String,
-      required: true,
     },
     toTime: {
       type: String,
-      required: true,
     },
     location: {
       type: String,
-      required: true,
     },
     price: [
       {
         type: {
           type: String,
-          required: true,
         },
         price: {
           type: Number,
-          required: true,
         },
         seats: {
           type: Number,
-          required: true,
         },
       },
     ],
